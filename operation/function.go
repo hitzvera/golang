@@ -9,6 +9,11 @@ func main(){
 
 	firstName, secondName := getFullName() // jika pengen menghiraukan beberapa value maka bisa pake ' _ '
 	fmt.Println(firstName, secondName)
+
+	namaPertama, namaKedua, namaKetiga := getCompleteName()
+	fmt.Println(namaPertama)
+	fmt.Println(namaKedua)
+	fmt.Println(namaKetiga)
 }
 
 func sayHello(){
@@ -26,4 +31,13 @@ func add(a int, b int) int {
 // return multiple value
 func getFullName() (string, string){
 	return "Mujahid", "Ansori"
+}
+
+// name return value
+func getCompleteName() (firstName, secondName, lastName string) {
+	firstName = "Mujahid"
+	secondName  = "Ansori"
+	lastName = "Majid"
+
+	return // otomatis nge return firstname, secondName, lastName,
 }
